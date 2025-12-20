@@ -1,0 +1,12 @@
+# ===== BACKEND (Spring Boot) =====
+taskmanager/target/
+taskmanager/.idea/
+taskmanager/*.iml
+
+# ===== FRONTEND (React) =====
+taskmanager-frontend/node_modules/
+taskmanager-frontend/build/
+
+# ===== GENERAL =====
+.env
+.DS_Store
