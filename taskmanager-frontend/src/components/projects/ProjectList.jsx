@@ -49,7 +49,7 @@ const ProjectList = ({ refresh, onRefreshComplete }) => {
   if (projects.length === 0) {
     return (
       <div className="text-center py-5">
-        <div style={{ fontSize: '5rem', opacity: 0.3 }}>📁</div>
+        <div style={{ fontSize: '5rem', opacity: 0.3 }}></div>
         <h3 className="text-muted mt-3 mb-2">No projects yet</h3>
         <p className="text-muted">Create your first project to get started!</p>
       </div>

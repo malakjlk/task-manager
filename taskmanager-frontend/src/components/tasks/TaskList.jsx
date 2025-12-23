@@ -6,7 +6,7 @@ const TaskList = ({ tasks, onTaskUpdated }) => {
     return (
       <div className="text-center py-5 card shadow-sm">
         <div className="card-body">
-          <div style={{ fontSize: '5rem', opacity: 0.3 }}>📝</div>
+          <div style={{ fontSize: '5rem', opacity: 0.3 }}></div>
           <h3 className="text-muted mt-3 mb-2">No tasks yet</h3>
           <p className="text-muted">Add your first task to get started!</p>
         </div>

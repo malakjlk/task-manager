@@ -7,7 +7,7 @@ const api = axios.create({
   },
 });
 
-// Intercepteur pour ajouter le token JWT
+// ajouter le token JWT
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -21,7 +21,7 @@ api.interceptors.request.use(
   }
 );
 
-// Intercepteur pour gérer les erreurs
+// gérer les erreurs
 api.interceptors.response.use(
   (response) => response,
   (error) => {

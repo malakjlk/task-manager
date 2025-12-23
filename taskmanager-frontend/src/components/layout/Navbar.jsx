@@ -12,25 +12,30 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white shadow-lg">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-2xl font-bold">
-            Task Manager
-          </Link>
-          
-          {user && (
-            <div className="flex items-center gap-4">
-              <span className="text-sm">Welcome, {user.name}</span>
-              <button
-                onClick={handleLogout}
-                className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded transition"
-              >
-                Logout
-              </button>
-            </div>
-          )}
-        </div>
+    <nav className="navbar navbar-expand-lg navbar-dark shadow-sm" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+      <div className="container">
+        <Link to="/" className="navbar-brand d-flex align-items-center">
+          <span className="ms-2 fw-bold fs-4">Task Manager</span>
+        </Link>
+        
+        {user && (
+          <div className="d-flex align-items-center">
+            <span className="text-white me-3 d-none d-md-inline">
+               <strong>{user.name}</strong>
+            </span>
+            <button
+              onClick={handleLogout}
+              className="btn btn-light btn-sm fw-bold"
+              style={{ 
+                borderRadius: '20px',
+                padding: '0.5rem 1.5rem',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+              }}
+            >
+              Logout
+            </button>
+          </div>
+        )}
       </div>
     </nav>
   );

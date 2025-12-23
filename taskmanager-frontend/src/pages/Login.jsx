@@ -32,7 +32,7 @@ const Login = () => {
       <div className="card shadow-lg" style={{ width: '100%', maxWidth: '450px', borderRadius: '1rem' }}>
         <div className="card-body p-5">
           <h2 className="text-center mb-4 fw-bold text-primary">
-            📋 Task Manager Login
+             Task Manager Login
           </h2>
           
           {error && (

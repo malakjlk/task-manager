@@ -4,12 +4,12 @@ import { taskService } from '../../services/taskService';
 const TaskItem = ({ task, onTaskUpdated }) => {
 const handleToggleComplete = async () => {
   try {
-    console.log('Toggling task:', task.id); // ← AJOUTE CETTE LIGNE POUR DEBUG
+    console.log('Toggling task:', task.id); 
     await taskService.toggleTaskCompletion(task.id);
     onTaskUpdated();
   } catch (error) {
-    console.error('Error toggling task:', error); // ← Regarde cette erreur dans la console
-    alert('Failed to update task: ' + error.message); // ← AJOUTE CETTE LIGNE
+    console.error('Error toggling task:', error); 
+    alert('Failed to update task: ' + error.message); 
   }
 };
 
@@ -64,9 +64,9 @@ const handleToggleComplete = async () => {
             )}
             
             <div className="d-flex gap-3 small text-muted">
-              <span>📅 Due: {formatDate(task.dueDate)}</span>
+              <span> Due: {formatDate(task.dueDate)}</span>
               {task.completed && (
-                <span className="text-success fw-bold">✓ Completed</span>
+                <span className="text-success fw-bold"> Completed</span>
               )}
             </div>
           </div>
@@ -76,7 +76,7 @@ const handleToggleComplete = async () => {
             className="btn btn-sm btn-outline-danger ms-2"
             title="Delete task"
           >
-            🗑️
+            delete
           </button>
         </div>
       </div>
