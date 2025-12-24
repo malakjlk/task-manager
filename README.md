@@ -56,7 +56,7 @@ This project is a small full-stack task management application , it allows users
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/task-manager.git
+git clone https://github.com/malakjlk/task-manager.git
 cd task-manager
 ```
 ### Backend Setup
