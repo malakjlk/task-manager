@@ -55,8 +55,10 @@ This project is a small full-stack task management application , it allows users
 ## Installation
 
 ### Clone the Repository
-git clone https://github.com/malakjlk/task-manager.git
+```bash
+git clone https://github.com/yourusername/task-manager.git
 cd task-manager
+```
 ### Backend Setup
 
 #### a) Create MySQL Database
@@ -73,11 +75,13 @@ Or use phpMyAdmin (XAMPP):
 Edit `backend/src/main/resources/application.properties`:
 
 #### c) Run Backend
+```bash
 cd taskmanager
 ./mvnw spring-boot:run
 
 # Windows
 mvnw.cmd spring-boot:run
+```
 
 The backend will start on `http://localhost:8080`
 
@@ -90,22 +94,21 @@ The backend will start on `http://localhost:8080`
 ### Frontend Setup
 
 #### a) Install Dependencies
+```bash
 cd taskmanager-frontend
 npm install
+```
 
 #### b) Start Development Server
+```bash
 npm start
-
+```
 The frontend will open automatically on `http://localhost:3000`
 
-### Demo Video
-Demo Video Link:
+## Author
+**Jlaika Malak **
 
-The video demonstrates:
-- Application running
-- Authentication
-- Project and task management
-- Progress tracking
+
 
 
 
