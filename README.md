@@ -105,11 +105,6 @@ npm start
 ```
 The frontend will open automatically on `http://localhost:3000`
 
-## Demo Video
-Link : https://drive.google.com/file/d/1fzGCWywrLv-MBneSB9MEE8tuPLgHo8LV/view?usp=sharing
-
-## Author
-**Jlaika Malak **
 
 
 
